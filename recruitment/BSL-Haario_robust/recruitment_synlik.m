@@ -11,15 +11,11 @@ M = (numsim-1)*cov_simsummaries;
 if positive>0  
     try
       M = (M+M.')/2;  
-     % M = nearestSPD(M);
-     [L, DMC, P] = modchol_ldlt(M);
-      M = P'*L*DMC*L'*P;
+      M = nearestSPD(M);
     catch
       try 
           M = (M+M.')/2;   
-        %  M = nearestSPD(M+1e-8*eye(dsum));
-          [L, DMC, P] = modchol_ldlt(M+1e-8*eye(dsum));
-          M = P'*L*DMC*L'*P;
+          M = nearestSPD(M+1e-8*eye(dsum));
       catch
           loglik = -inf;
           return
