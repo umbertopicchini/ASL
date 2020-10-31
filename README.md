@@ -1,6 +1,17 @@
 # ASL: adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods
 
-This is supporting code for the paper by Umberto Picchini, Umberto Simola and Jukka Corander "Adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods", http://arxiv.org/abs/2004.04558
+This is supporting code for version V2 (3 October 2020) of the paper by Umberto Picchini, Umberto Simola and Jukka Corander "Adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods", http://arxiv.org/abs/2004.04558
 
-- the "astrostats" folder contains code to run the astrostatistics example using ASL with correlated synthetic likelihoods. The uploaded version computes synthetic likelihoods with a regularization of the covariance matrix via shrinkage.
-- the "recruitment" folder contains code to run the recruitment boom and bust example.
+- the "g-and-k" filder pertainssection 6.1, and specifically:
+    - subfolder ASL considers the novel adaptive MCMC for synthetic likelihoods
+    - subfolder BSL-Haario considers standard BSL with the adaptive MCMC method of Haario et al.
+    - subfolder CSL considers correlated synthetic likelihoods with the adaptive MCMC method of Haario et al.
+    - subfolder ELFI is Python code meant to run with the ELFI engine https://elfi.readthedocs.io
+- the "supernova" folder pertains section 6.2, and specifically
+    - subfolder ASL considers the novel adaptive MCMC for synthetic likelihoods;
+    - subfolder BOLFI_supernovae is Python code meant to run with the ELFI engine https://elfi.readthedocs.io
+    - subfolder standard-BSL-Haario considers standard BSL with the adaptive MCMC method of Haario et al.
+- the "recruitment" folder pertains the recruitment boom and bust example (section 6.3) and specifically the code runs the ASL method, except for
+      the subfolder BSL-Haario_robust which implements semiparametric BSL with the adaptive MCMC method of Haario et al.
+
+     
