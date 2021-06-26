@@ -1,8 +1,8 @@
 # ASL: adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods
 
-This is supporting code for version V2 (3 October 2020) of the paper by Umberto Picchini, Umberto Simola and Jukka Corander "Adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods", http://arxiv.org/abs/2004.04558
+This is supporting code for version V3 (28 June 2021) of the paper by Umberto Picchini, Umberto Simola and Jukka Corander "Sequentially guided MCMC proposals for synthetic likelihoods and correlated synthetic likelihoods", http://arxiv.org/abs/2004.04558 (previous versions were named "Adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods")
 
-- the "g-and-k" filder pertainssection 6.1, and specifically:
+- the "g-and-k" folder pertainssection 6.1, and specifically:
     - subfolder ASL considers the novel adaptive MCMC for synthetic likelihoods
     - subfolder BSL-Haario considers standard BSL with the adaptive MCMC method of Haario et al.
     - subfolder CSL considers correlated synthetic likelihoods with the adaptive MCMC method of Haario et al.
