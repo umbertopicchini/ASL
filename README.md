@@ -1,4 +1,4 @@
-# ASL: adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods
+# ASL: Sequentially guided MCMC proposals for synthetic likelihoods and correlated synthetic likelihoods
 
 This is supporting code for version V3 (28 June 2021) of the paper by Umberto Picchini, Umberto Simola and Jukka Corander "Sequentially guided MCMC proposals for synthetic likelihoods and correlated synthetic likelihoods", http://arxiv.org/abs/2004.04558 (previous versions were named "Adaptive MCMC for synthetic likelihoods and correlated synthetic likelihoods")
 
