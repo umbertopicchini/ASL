@@ -1,4 +1,4 @@
-function MCMC = bslmcmc(bigthetastart,parmask,parbase,sobs,nobs,numsim,R_mcmc,step_rw,burnin,length_CoVupdate,robust,mcwm)
+function MCMC = bslmcmc(bigthetastart,parmask,parbase,sobs,numsim,R_mcmc,step_rw,burnin,length_CoVupdate,robust,mcwm)
 % thetastart: starting parameter values
 % numsim: number of simulated datasets at teach mcmc iteration
 % R_mcmc: number of mcmc iterations
