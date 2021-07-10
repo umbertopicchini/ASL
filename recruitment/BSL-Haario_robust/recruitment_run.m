@@ -5,7 +5,6 @@ k = 50;
 alpha = 0.09;
 beta = 0.05;
 
-nobs = 300;  % only the last 250 will be actually used.
 
 bigtheta_true =[r,k,alpha,beta];
 % simulate "observed" summaries
@@ -29,5 +28,5 @@ if mod(burnin,2)>0
     error('BURNIN must be even.')
 end
 
-chains = bslmcmc_robust(bigtheta_start,parmask,parbase,s_obs,nobs,numsim,mcmciter,sd_randomwalk,burnin,length_CoVupdate,robust,mcwm);
+chains = bslmcmc_robust(bigtheta_start,parmask,parbase,s_obs,numsim,mcmciter,sd_randomwalk,burnin,length_CoVupdate,robust,mcwm);
 save('chains','chains','-ascii')
