@@ -29,8 +29,5 @@ lengthcovupdate = 50;
 randomwalk_iterstart = 800; % the first post-burnin iteration when random-walk metropolis kicks-in
 verbose = 1;
 
-
-
-% here ASL uses a multivariate Student's proposal
 chains = aslmcmc(theta_start,s_obs,nobs,numsim,mcmciter,sd_randomwalk,burnin,randomwalk_iterstart,verbose,robust,mcwm,lengthcovupdate);
 save('chains','chains','-ascii');
