@@ -6,8 +6,6 @@ k = 50;
 alpha = 0.09;
 beta = 0.05;
 
-nobs = 300;  % only the last 250 will be actually used.
-
 theta_true =[r,k,alpha,beta];
 % simulate "observed" summaries
 s_obs = recruitment_simsummaries(theta_true,1);
@@ -29,5 +27,5 @@ lengthcovupdate = 50;
 randomwalk_iterstart = 800; % the first post-burnin iteration when random-walk metropolis kicks-in
 verbose = 1;
 
-chains = aslmcmc(theta_start,s_obs,nobs,numsim,mcmciter,sd_randomwalk,burnin,randomwalk_iterstart,verbose,robust,mcwm,lengthcovupdate);
+chains = aslmcmc(theta_start,s_obs,numsim,mcmciter,sd_randomwalk,burnin,randomwalk_iterstart,verbose,robust,mcwm,lengthcovupdate);
 save('chains','chains','-ascii');
