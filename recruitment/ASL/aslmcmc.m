@@ -1,4 +1,4 @@
-function [MCMC,proposal_cov]=  aslmcmc(thetastart,sobs,nobs,numsim,R_mcmc,step_rw,burnin,randomwalk_iterstart,verbose,robust,mcwm,length_CoVupdate)
+function [MCMC,proposal_cov]=  aslmcmc(thetastart,sobs,numsim,R_mcmc,step_rw,burnin,randomwalk_iterstart,verbose,robust,mcwm,length_CoVupdate)
 % thetastart: starting parameter values
 % numsim: number of simulated datasets at teach mcmc iteration
 % R_mcmc: number of mcmc iterations
